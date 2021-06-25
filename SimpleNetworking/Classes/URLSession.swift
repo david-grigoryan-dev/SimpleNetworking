@@ -18,16 +18,20 @@ public extension URLSession {
                                _ completion: @escaping (Result<T, Error>) -> Void) -> URLSessionDataTask? {
         
         do {
-            let request = try HTTPNetworkRequest.configureHTTPRequest(from: url, parameters: parameters, headers: headers, body: body, method: method)
+            let request = try HTTPNetworkRequest.configureHTTPRequest(from: url,
+                                                                      parameters: parameters,
+                                                                      headers: headers,
+                                                                      body: body,
+                                                                      method: method)
             
             #if DEBUG
-            //request.log()
+            request.log()
             #endif
             
             let task = dataTask(with: request) { (data, response, error) in
                 
                 #if DEBUG
-                //(response as? HTTPURLResponse)?.log(data: data, error: error)
+                (response as? HTTPURLResponse)?.log(data: data, error: error)
                 #endif
                 
                 if let response = response as? HTTPURLResponse, let unwrappedData = data {

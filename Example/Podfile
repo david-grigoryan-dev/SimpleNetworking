@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SimpleNetworking_Tests' do
+  pod 'SimpleNetworking', :path => '../'
+  
+  
+end

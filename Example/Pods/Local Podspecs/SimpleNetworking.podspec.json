@@ -1,0 +1,22 @@
+{
+  "name": "SimpleNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of SimpleNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/davit-grigoryan-sfl/SimpleNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "davit-grigoryan-sfl": "davit.grigoryan@sfl.am"
+  },
+  "source": {
+    "git": "https://github.com/davit-grigoryan-sfl/SimpleNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SimpleNetworking/Classes/**/*"
+}
